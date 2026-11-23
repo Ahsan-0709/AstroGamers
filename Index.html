@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AstroGamers – গেমারদের নিজের জগৎ</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#0a0b1e;--bg2:#12143a;--card:#171a47;--tx:#eef0ff;--mut:#a9aed6;--ac:#7c5cff;--ac2:#00e5ff;--hot:#ff3d81;--bd:#2a2f6e}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f3f4ff;--bg2:#e6e8ff;--card:#fff;--tx:#14163a;--mut:#555a8a;--bd:#d3d6f5}}
+:root[data-theme="dark"]{--bg:#0a0b1e;--bg2:#12143a;--card:#171a47;--tx:#eef0ff;--mut:#a9aed6;--bd:#2a2f6e}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:"Hind Siliguri","Noto Sans Bengali","Segoe UI",system-ui,sans-serif;line-height:1.65}
+.w{max-width:1080px;margin:auto;padding:0 18px}
+section{padding:56px 0}
+h1,h2,h3{line-height:1.25;margin:0 0 10px}
+h2{font-size:clamp(1.5rem,4vw,2.1rem);text-align:center}
+.sub{text-align:center;color:var(--mut);margin:0 auto 30px;max-width:560px}
+.hero{background:radial-gradient(circle at 80% 20%,#7c5cff55,transparent 45%),radial-gradient(circle at 10% 80%,#00e5ff33,transparent 40%),var(--bg2);overflow:hidden}
+.hero .w{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;padding-top:40px;padding-bottom:40px}
+.logo{font-weight:800;letter-spacing:.5px;font-size:1.2rem;margin-bottom:18px}
+.logo b{color:var(--ac2)}
+.tag{display:inline-block;background:#ff3d8122;color:var(--hot);border:1px solid var(--hot);padding:3px 12px;border-radius:99px;font-size:.85rem;margin-bottom:12px}
+h1{font-size:clamp(2rem,6vw,3.2rem)}
+h1 span{background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn{display:inline-block;padding:13px 26px;border-radius:12px;font-weight:700;text-decoration:none;color:#fff;background:linear-gradient(90deg,var(--ac),var(--hot));box-shadow:0 8px 24px #7c5cff55;margin:8px 8px 0 0}
+.btn.o{background:none;border:1.5px solid var(--ac2);color:var(--ac2);box-shadow:none}
+.art svg{width:100%;height:auto;max-width:420px;display:block;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:20px}
+.card .ic{font-size:2rem}
+.card p{margin:6px 0 0;color:var(--mut);font-size:.95rem}
+.alt{background:var(--bg2)}
+.price{font-size:1.7rem;font-weight:800;color:var(--ac2)}
+.price s{font-size:1rem;color:var(--mut);font-weight:400}
+.hot{border-color:var(--hot);position:relative}
+.hot::after{content:"সেরা অফার";position:absolute;top:-12px;right:14px;background:var(--hot);color:#fff;font-size:.75rem;padding:2px 10px;border-radius:99px}
+.pills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.pills span{background:var(--card);border:1px solid var(--bd);padding:8px 16px;border-radius:99px}
+.note{font-size:.8rem;color:var(--mut);text-align:center;margin-top:14px}
+.q{font-style:normal}
+.who{color:var(--ac2);font-weight:700;margin-top:8px}
+.contact a{color:var(--ac2)}
+footer{text-align:center;color:var(--mut);padding:24px 18px 90px;font-size:.85rem}
+.bar{position:fixed;left:0;right:0;bottom:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:var(--bg2);border-top:1px solid var(--bd);display:flex;gap:10px;justify-content:center;z-index:5}
+.bar .btn{margin:0;padding:10px 20px}
+@media(max-width:760px){.hero .w{grid-template-columns:1fr}.art{order:-1}}
+</style>
+</head>
+<body>
+
+<header class="hero"><div class="w">
+ <div>
+  <div class="logo">ASTRO<b>GAMERS</b></div>
+  <span class="tag">🔥 নতুন গেমারদের জন্য বিশেষ অফার</span>
+  <h1>আপনার গেমিং হোক <span>অন্য লেভেলে</span></h1>
+  <p>অরিজিনাল গেমিং গিয়ার, গেম ও টপ-আপ — এক জায়গায়। সেরা দামে, দ্রুত ডেলিভারিতে, ওয়ারেন্টিসহ।</p>
+  <a class="btn" href="#contact">এখনই অর্ডার করুন</a><a class="btn o" href="#price">অফার দেখুন</a>
+ </div>
+ <div class="art" aria-hidden="true">
+  <svg viewBox="0 0 400 340" xmlns="http://www.w3.org/2000/svg">
+   <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#00e5ff"/></linearGradient></defs>
+   <circle cx="200" cy="170" r="140" fill="none" stroke="url(#g)" stroke-width="2" stroke-dasharray="6 10"/>
+   <circle cx="200" cy="170" r="95" fill="#7c5cff33"/>
+   <circle cx="330" cy="70" r="16" fill="#ff3d81"/><circle cx="60" cy="250" r="10" fill="#00e5ff"/>
+   <path d="M90 200q-12-70 40-80h140q52 10 40 80-8 40-38 20l-30-26h-84l-30 26q-30 20-38-20z" fill="url(#g)"/>
+   <rect x="112" y="150" width="34" height="9" rx="3" fill="#0a0b1e"/><rect x="124" y="138" width="9" height="34" rx="3" fill="#0a0b1e"/>
+   <circle cx="262" cy="146" r="9" fill="#0a0b1e"/><circle cx="286" cy="166" r="9" fill="#0a0b1e"/>
+   <g fill="#fff"><circle cx="60" cy="60" r="2"/><circle cx="350" cy="260" r="2"/><circle cx="120" cy="40" r="3"/><circle cx="300" cy="300" r="2"/></g>
+  </svg>
+ </div>
+</div></header>
+
+<section><div class="w">
+ <h2>আমরা কী দিই</h2>
+ <p class="sub">গেমারের যা যা দরকার, সব এক ছাদের নিচে</p>
+ <div class="grid">
+  <div class="card"><div class="ic">🎧</div><h3>গেমিং গিয়ার</h3><p>হেডসেট, কিবোর্ড, মাউস, কন্ট্রোলার ও আনুষঙ্গিক সবকিছু।</p></div>
+  <div class="card"><div class="ic">💎</div><h3>গেম টপ-আপ</h3><p>জনপ্রিয় মোবাইল ও পিসি গেমের ডায়মন্ড/ক্রেডিট দ্রুত টপ-আপ।</p></div>
+  <div class="card"><div class="ic">🎮</div><h3>গেম ও গিফট কার্ড</h3><p>কনসোল ও পিসি গেম, গিফট কার্ড ও সাবস্ক্রিপশন।</p></div>
+  <div class="card"><div class="ic">🏆</div><h3>টুর্নামেন্ট ও কমিউনিটি</h3><p>বন্ধুদের সাথে খেলার ইভেন্ট ও গেমার কমিউনিটি।</p></div>
+ </div>
+</div></section>
+
+<section class="alt"><div class="w">
+ <h2>কাদের জন্য?</h2>
+ <p class="sub">ক্যাজুয়াল থেকে প্রো — সবার জন্য</p>
+ <div class="pills"><span>🎓 স্কুল-কলেজ-ইউনিভার্সিটির গেমার</span><span>📺 স্ট্রিমার ও কনটেন্ট ক্রিয়েটর</span><span>🏅 ই-স্পোর্টস প্লেয়ার</span><span>🎁 গিফট খুঁজছেন যারা</span></div>
+</div></section>
+
+<section><div class="w">
+ <h2>গেমারদের সমস্যা, আমাদের সমাধান</h2>
+ <p class="sub">কেনাকাটার দুশ্চিন্তা এখন অতীত</p>
+ <div class="grid">
+  <div class="card"><h3>❌ নকল পণ্যের ভয়</h3><p>✅ শুধু অরিজিনাল পণ্য, সাথে ওয়ারেন্টি।</p></div>
+  <div class="card"><h3>❌ টপ-আপে দেরি</h3><p>✅ অর্ডারের পর দ্রুত ডেলিভারি।</p></div>
+  <div class="card"><h3>❌ ঠিক পণ্য বাছাই কঠিন</h3><p>✅ বাজেট বললেই সঠিক গিয়ার সাজেস্ট করি।</p></div>
+  <div class="card"><h3>❌ বিক্রয়োত্তর সেবা নেই</h3><p>✅ সমস্যায় পাশে আছি, ম্যাসেজ করলেই সাড়া।</p></div>
+ </div>
+</div></section>
+
+<section class="alt"><div class="w">
+ <h2>কেন AstroGamers আলাদা?</h2>
+ <div class="grid" style="margin-top:24px">
+  <div class="card"><h3>🛡️ অরিজিনাল গ্যারান্টি</h3><p>প্রতিটি পণ্যে বিশ্বাসযোগ্য উৎস ও ওয়ারেন্টি।</p></div>
+  <div class="card"><h3>⚡ দ্রুত সার্ভিস</h3><p>ঢাকায় দ্রুত, সারা দেশে নির্ভরযোগ্য কুরিয়ার।</p></div>
+  <div class="card"><h3>💬 গেমারের সাথে গেমারের কথা</h3><p>আমরা নিজেরাই গেমার — তাই আপনার দরকার বুঝি।</p></div>
+  <div class="card"><h3>💸 সাশ্রয়ী দাম</h3><p>নিয়মিত অফার ও কম্বো ডিল।</p></div>
+ </div>
+</div></section>
+
+<section id="price"><div class="w">
+ <h2>দাম, অফার ও ডেলিভারি</h2>
+ <p class="sub">নিচের দামগুলো নমুনা — প্রকৃত দাম বসিয়ে নিন</p>
+ <div class="grid">
+  <div class="card"><h3>গেমার স্টার্টার</h3><div class="price">৳ ২,৪৯৯ <s>৳ ২,৯৯৯</s></div><p>গেমিং মাউস + মাউসপ্যাড</p></div>
+  <div class="card hot"><h3>প্রো কম্বো</h3><div class="price">৳ ৫,৯৯৯ <s>৳ ৭,২০০</s></div><p>হেডসেট + কিবোর্ড + মাউস</p></div>
+  <div class="card"><h3>টপ-আপ ডিল</h3><div class="price">৳ ১০০ থেকে</div><p>গেম অনুযায়ী ডায়মন্ড/ক্রেডিট</p></div>
+ </div>
+ <div class="pills" style="margin-top:22px"><span>🚚 ঢাকায় ১–২ দিন</span><span>📦 সারা দেশে ২–৪ দিন</span><span>💵 ক্যাশ অন ডেলিভারি</span><span>📱 বিকাশ / নগদ</span></div>
+</div></section>
+
+<section class="alt"><div class="w">
+ <h2>গেমারদের মতামত</h2>
+ <p class="sub">নমুনা রিভিউ — আসল কাস্টমারের মতামত দিয়ে বদলে নিন</p>
+ <div class="grid">
+  <div class="card"><p class="q">“হেডসেটের সাউন্ড দারুণ, ডেলিভারিও দ্রুত পেয়েছি।”</p><div class="who">★★★★★ — রাকিব, ঢাকা</div></div>
+  <div class="card"><p class="q">“টপ-আপ মিনিটের মধ্যে হয়ে গেছে। ভরসা করা যায়।”</p><div class="who">★★★★★ — নুসরাত, চট্টগ্রাম</div></div>
+  <div class="card"><p class="q">“বাজেটে সেরা কিবোর্ড সাজেস্ট করেছে, খুশি।”</p><div class="who">★★★★★ — সাকিব, সিলেট</div></div>
+ </div>
+</div></section>
+
+<section id="contact"><div class="w contact">
+ <h2>যোগাযোগ করুন</h2>
+ <p class="sub">অর্ডার বা প্রশ্নে এখনই মেসেজ দিন</p>
+ <div class="grid">
+  <div class="card"><h3>📞 ফোন / হোয়াটসঅ্যাপ</h3><p>[আপনার ফোন নম্বর এখানে]</p></div>
+  <div class="card"><h3>📍 ঠিকানা</h3><p>[আপনার দোকান/অফিসের ঠিকানা]</p></div>
+  <div class="card"><h3>👍 ফেসবুক পেজ</h3><p>[আপনার পেজের লিংক]</p></div>
+  <div class="card"><h3>🕙 খোলার সময়</h3><p>[যেমন: সকাল ১০টা – রাত ১০টা]</p></div>
+ </div>
+ <p class="note">ফোন, ঠিকানা, পেজের তথ্য দিলে আমি সরাসরি বসিয়ে দেব।</p>
+</div></section>
+
+<footer>© ২০২৬ AstroGamers। সর্বস্বত্ব সংরক্ষিত।</footer>
+<div class="bar"><a class="btn" href="#contact">অর্ডার করুন</a><a class="btn o" href="#price">অফার</a></div>
+</body>
+</html>
